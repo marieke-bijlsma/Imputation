@@ -1,4 +1,4 @@
-#MOLGENIS walltime=05:59:59 mem=5gb ppn=21
+#MOLGENIS walltime=23:59:59 mem=5gb ppn=1
 
 #string pigzVersion
 #string liftOverResultsDir
