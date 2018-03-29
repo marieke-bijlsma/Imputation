@@ -1,0 +1,43 @@
+##DEFAULT DIRECTORY PARAMETERS
+workDir,/groups/${group}/${tmpDir}/generatedscripts/
+dataDir,/apps/data/
+tempDir,/groups/${group}/${tmpDir}/temp
+projectDir,/groups/${group}/${tmpDir}/projects/${study}/${run}/
+
+
+##IMPUTATION PARAMETERS
+pathToPhasedReference1000G,${dataDir}/${referenceGenome}/imputationReference_phased_b37/ALL_${referenceGenome}_phase1integrated_v3_chr${chrom}_impute
+pathToPhasedReferenceGoNL,${dataDir}/${referenceGenome}/imputationReference_phased_b37/chr${chrom}
+pathToPhasedReferenceHRC,/groups/umcg-lifelines/tmp03/EGAD00001002729/
+geneticMapImputation,${dataDir}/www.shapeit.fr/genetic_map_b37/genetic_map_chr${chrom}_combined_b37.txt
+
+
+##CONCATCHUNKS PARAMETERS
+concatChunksFile,${intermediateDir}/chr${chrom}_concatenated
+concatChunksInfoFile,${intermediateDir}/chr${chrom}_info_concatenated
+concatChunksCoordinatesFile,${intermediateDir}/chunks_coordinates_concatenated.csv
+
+
+##COPYTORESULTSDIR PARAMETERS
+liftOverResultsDir,${projectDir}/results/liftOver/
+logsResultsDir,${projectDir}/results/logs/
+finalResultsDir,${projectDir}/results/finalResults/
+
+
+##TMP FOLDERS
+intermediateDir,/groups/${group}/${tmpDir}/tmp/${study}/
+outputPerChr,${intermediateDir}/chr${chr}
+outputPerChunk,${intermediateDir}/chr${chrom}_${fromChrPos}-${toChrPos}
+
+
+##MODULE VERSIONS
+stage,module load
+pipelineVersion,Imputation/1.0.0
+plinkVersion,plink/1.9-foss-2015b
+liftOverUcscVersion,liftOverUcsc/20161011
+shapeItVersion,shapeit/v2.r837-static
+genotypeHarmonizerVersion,GenotypeHarmonizer/1.4.18-Java-1.8.0_45
+imputeVersion,IMPUTE4/r265.2
+qctoolVersion,qctool/1.4
+pigzVersion,pigz/2.3.1-foss-2015b
+bglChunksVersion,makeBGLCHUNKS/02-Dec-2016-foss-2015b

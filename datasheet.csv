@@ -1,2 +1,2 @@
-study,rawdata,genomeBuild,referenceGenome,run
-projectXX,XXX,hgXX,XXX,runXX
+study,rawdata,genomeBuild,referenceGenome,run,pipeline
+projectXX,XXX,hgXX,XXX,runXX,[phasing/imputation]

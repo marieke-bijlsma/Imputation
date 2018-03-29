@@ -4,7 +4,3 @@ s02_Phasing,protocols/Phasing.sh,s01_LiftOver
 s03_GenotypeHarmonizer,protocols/GenotypeHarmonizer.sh,s02_Phasing
 s04_CreateChunks,protocols/CreateChunks.sh,s03_GenotypeHarmonizer
 s05_ConcatChunksCoordinates,protocols/ConcatChunksCoordinates.sh,s04_CreateChunks
-s06_Imputation,protocols/Imputation.sh,s05_ConcatChunksCoordinates
-s07_CreateStats,protocols/CreateStats.sh,s06_Imputation
-s08_ConcatChunks,protocols/ConcatChunks.sh,s07_CreateStats
-s09_CopyToResultsDir,protocols/CopyToResultsDir.sh,s08_ConcatChunks

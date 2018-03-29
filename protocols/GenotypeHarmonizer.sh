@@ -1,4 +1,4 @@
-#MOLGENIS walltime=05:59:59 mem=10gb ppn=1
+#MOLGENIS walltime=04:59:59 mem=5gb ppn=1
 
 #string genotypeHarmonizerVersion
 #string outputPerChr

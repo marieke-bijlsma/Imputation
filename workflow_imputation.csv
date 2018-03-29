@@ -1,0 +1,5 @@
+step,protocol,dependencies
+s06_Imputation,protocols/Imputation.sh,
+s07_CreateStats,protocols/CreateStats.sh,s06_Imputation
+s08_ConcatChunks,protocols/ConcatChunks.sh,s07_CreateStats
+s09_CopyToResultsDir,protocols/CopyToResultsDir.sh,s08_ConcatChunks
